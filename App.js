@@ -4,6 +4,8 @@ import Filme from './componentes/Filme';
 import Serie from './componentes/Serie';
 
 export default function App() {
+/* TESTE */
+
   const listaFilmes = [
     {
       nome: "A Doce Vida",
