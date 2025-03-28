@@ -17,19 +17,23 @@ const Serie = ({ nome, ano, diretor, temporadas, capa }) => {
 
 const styles = StyleSheet.create({
   container: {
-    flexDirection: 'row',
+    flex: 1, 
+    flexDirection: 'flex', 
     marginVertical: 10,
     padding: 10,
     backgroundColor: '#f9f9f9',
     borderRadius: 5,
+    justifyContent: 'center', 
+    alignItems: 'center',
   },
   imagem: {
     width: 100,
     height: 150,
     marginRight: 10,
+    flex: 1,
   },
   info: {
-    flex: 1,
+    alignItems: 'center',
   },
   titulo: {
     fontSize: 18,

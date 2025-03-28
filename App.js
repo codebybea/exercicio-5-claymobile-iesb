@@ -4,7 +4,7 @@ import Filme from './componentes/Filme';
 import Serie from './componentes/Serie';
 
 export default function App() {
-/* TESTE */
+  /* TESTE */
 
   const listaFilmes = [
     {
@@ -63,7 +63,7 @@ export default function App() {
 
   return (
     <ScrollView style={styles.container}>
-      <Text style={styles.tituloSecao}>Filmes</Text>
+      <Text style={styles.titulo}>Filmes</Text>
       {listaFilmes.map((filme, index) => (
         <Filme
           key={index}
@@ -75,7 +75,7 @@ export default function App() {
         />
       ))}
 
-      <Text style={styles.tituloSecao}>Séries</Text>
+      <Text style={styles.titulo}>Séries</Text>
       {listaSeries.map((serie, index) => (
         <Serie
           key={index}
@@ -96,7 +96,9 @@ const styles = StyleSheet.create({
     padding: 10,
     backgroundColor: '#fff',
   },
-  tituloSecao: {
+  titulo: {
+    color: 'red',
+    textAlign: 'center',
     fontSize: 24,
     fontWeight: 'bold',
     marginVertical: 10,
